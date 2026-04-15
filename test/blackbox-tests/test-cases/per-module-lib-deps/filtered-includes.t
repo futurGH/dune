@@ -57,7 +57,7 @@ module's own obj dir):
 
   $ extract_includes () {
   >   dune rules "$1" 2>&1 | tr -s '() \n' '\n' | \
-  >     awk '/^-I$/{getline; print}' | grep -v '\.main\.' | sort -u
+  >     awk '/^-I$/{getline; print}' | grep -v '\.main\.' | sort -u || true
   > }
 
 The module uses_mylib references Mylib, so its -I flags should include
