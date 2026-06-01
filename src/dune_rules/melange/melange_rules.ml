@@ -291,7 +291,10 @@ let make_external_lib_emission_deps =
     |> Dep.Set.of_list
   in
   fun ~obj_dir ->
-    let melange_obj_dirs = Obj_dir.all_obj_dirs obj_dir ~mode:Melange in
+    let melange_obj_dirs =
+      Obj_dir.all_obj_dirs obj_dir ~mode:Melange
+      |> List.concat_map ~f:(fun dir -> [ dir; Path.relative dir "melange" ])
+    in
     let deps =
       Dep.Set.union
         (deps_of_glob ~dirs:melange_obj_dirs cmj_glob)
