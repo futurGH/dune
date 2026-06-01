@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1776428900385,
-  "repoUrl": "https://github.com/ocaml/dune",
+  "lastUpdate": 1780280125644,
+  "repoUrl": "https://github.com/futurGH/dune",
   "entries": {
     "Melange Benchmark": [
       {
@@ -491433,6 +491433,35 @@ window.BENCHMARK_DATA = {
           {
             "name": "synthetic watch build time (warm, Linux)",
             "value": 20.260042347013332,
+            "unit": "seconds"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "anmonteiro@gmail.com",
+            "name": "Antonio Nuno Monteiro",
+            "username": "anmonteiro"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9215798416e3c86d68900705261e80f84ecf20b8",
+          "message": "fix(x-compilation): preserve target env for target context (#14817)\n\nSigned-off-by: Antonio Nuno Monteiro <anmonteiro@gmail.com>",
+          "timestamp": "2026-05-31T16:37:51-07:00",
+          "tree_id": "fc0889bf4b56b839f89df46753ece79ff695aa6d",
+          "url": "https://github.com/futurGH/dune/commit/9215798416e3c86d68900705261e80f84ecf20b8"
+        },
+        "date": 1780279903070,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "synthetic watch build time (warm, Linux)",
+            "value": 20.22994233119333,
             "unit": "seconds"
           }
         ]
